@@ -8,6 +8,7 @@
 - PropertyInfo
 
 ### 用法
+- 项目属性=>输出=>勾选生成xml文件
 ```csharp
 /// <summary>
 /// 测试类
@@ -16,7 +17,7 @@ public class TestType
 {
 }
 
-MetadataXmlCommentExtension.InculudeXml(GetXmlPath());
+MetadataXmlCommentExtension.InculudeXml(GetXmlPath()); //导出生成的xml文件
 var type = typeof(TestType);
 var summary = type.GetComments() //summary=测试类
 ```
